@@ -1,4 +1,15 @@
 {
+
+    "@@comment": "Translate Onboarding page",
+    "onboarding_title1": "Welcome",
+    "onboarding_subtitle1": "Discover amazing features tailored for you.",
+    "onboarding_title2": "Stay Connected",
+    "onboarding_subtitle2": "Easily chat and interact with your friends anytime.",
+    "onboarding_title3": "Get Started",
+    "onboarding_subtitle3": "Create an account and explore endless possibilities.",
+
+
+
     "@@comment": "Translations for Home Page",
     "helloWorld": "Hello World",
     "hello": "Hello",
@@ -15,5 +26,9 @@
     "changeTheme": "Change Theme",
 
     "@@comment": "General",
-    "languageName": "English"
+
+    "languageName": "English",
+    "started":"Get Started",
+    "next":"Next",
+    "skip" : "Skip"
 }
