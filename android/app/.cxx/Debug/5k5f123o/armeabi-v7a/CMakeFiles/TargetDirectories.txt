@@ -1,0 +1,2 @@
+/home/hana/HanaDoc/standard/marker_project/android/app/.cxx/Debug/5k5f123o/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/hana/HanaDoc/standard/marker_project/android/app/.cxx/Debug/5k5f123o/armeabi-v7a/CMakeFiles/rebuild_cache.dir

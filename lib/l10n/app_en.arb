@@ -1,0 +1,19 @@
+{
+    "@@comment": "Translations for Home Page",
+    "helloWorld": "Hello World",
+    "hello": "Hello",
+    "search": "Search",
+    "welcome": "Welcome",
+
+    "@@comment": "Translations for Settings Page",
+    "selectLanguageOfYourChoice": "Select language of your choice",
+    "delete": "Delete",
+    "yes": "Yes",
+    "no": "No",
+    "home": "Home",
+    "settings": "Settings",
+    "changeTheme": "Change Theme",
+
+    "@@comment": "General",
+    "languageName": "English"
+}

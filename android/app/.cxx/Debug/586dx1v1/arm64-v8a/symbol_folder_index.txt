@@ -1,0 +1,1 @@
+/home/hana/HanaDoc/standard/marker_project/build/app/intermediates/cxx/Debug/586dx1v1/obj/arm64-v8a

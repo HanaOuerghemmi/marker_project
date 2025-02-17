@@ -1,0 +1,19 @@
+{
+    "@@comment": "Translations for Home Page",
+    "helloWorld": "Bonjour le monde",
+    "hello": "Bonjour",
+    "search": "Rechercher",
+    "welcome": "Bienvenue",
+
+    "@@comment": "Translations for Settings Page",
+    "selectLanguageOfYourChoice": "Sélectionnez la langue de votre choix",
+    "delete": "Supprimer",
+    "yes": "Oui",
+    "no": "Non",
+    "home": "Accueil",
+    "settings": "Paramètres",
+    "changeTheme": "Changer le thème",
+
+    "@@comment": "General",
+    "languageName": "Français"
+}
