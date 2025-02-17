@@ -1,12 +1,12 @@
 
 import 'package:flutter/material.dart';
-import 'package:marker_project/core/features/onbording/widgets/onbording_buid_dot.dart';
-import 'package:marker_project/core/features/onbording/widgets/onbording_build_page.dart';
-import 'package:marker_project/features/home_page.dart';
+
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import '../../../features/home_page.dart';
 import '../../core.dart';
+import 'onbording.dart';
   final PageController _pageController = PageController();
        
 
