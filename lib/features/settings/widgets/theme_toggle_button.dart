@@ -17,10 +17,10 @@ class ThemeToggleButton extends StatelessWidget {
           title: Text(AppLocalizations.of(context)!.changeTheme),
           trailing: Switch(
             value: isDarkMode,  // Set value based on theme mode
-            activeColor: Colors.amber,
-            inactiveThumbColor: Colors.grey,
-            inactiveTrackColor: Colors.grey.withOpacity(0.4),
-            activeTrackColor: Colors.amber.withOpacity(0.5),
+            activeColor: AppColors.secondColor,
+            inactiveThumbColor: AppColors.grey,
+            inactiveTrackColor: AppColors.grey.withOpacity(0.4),
+            activeTrackColor: AppColors.secondColor.withOpacity(0.4),
             onChanged: (bool newValue) {
               context.read<ThemeCubit>().toggleTheme();
             },

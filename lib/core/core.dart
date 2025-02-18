@@ -8,7 +8,7 @@ export 'services/user_language_service.dart';
 //**********theme  */
 
 export 'theme/theme.dart';
-
+export 'theme/colors.dart';
 //***************bloc  */
 export 'bloc/language_cubit.dart';
 export 'bloc/theme_cubit.dart';

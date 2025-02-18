@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
               localizationsDelegates: AppLocalizations.localizationsDelegates,
               supportedLocales: AppLocalizations.supportedLocales,
               locale: locale, 
-              theme: lightTheme, 
-              darkTheme: darkTheme,
+              theme: AppTheme.lightTheme, 
+              darkTheme: AppTheme.darkTheme,
               themeMode: themeMode, 
               home: isShowOnboarding ? const HomePage() : OnboardingScreen(),
             );
