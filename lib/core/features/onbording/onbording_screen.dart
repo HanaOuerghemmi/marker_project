@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
@@ -7,8 +6,8 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../../features/home_page.dart';
 import '../../core.dart';
 import 'onbording.dart';
-  final PageController _pageController = PageController();
-       
+
+final PageController _pageController = PageController();
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -21,29 +20,28 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   int _currentPage = 0;
 
   List<Widget> _buildPages(context) {
- final localizations = AppLocalizations.of(context)!;
+    final localizations = AppLocalizations.of(context)!;
     return [
       onbordingBuildPage(
         context: context,
-          imagePath: ONBORDING_FIRST,
-          title: localizations.onboarding_title1,
-          subtitle: localizations.onboarding_subtitle1
-          
-          ),
-      onbordingBuildPage(
-
-        context: context,
-          imagePath: ONBORDING_SECOND,
-          title: localizations.onboarding_title2,
-          subtitle: localizations.onboarding_subtitle2),
+        imagePath: ONBORDING_FIRST,
+        title: localizations.onboarding_title1,
+        subtitle: localizations.onboarding_subtitle1,
+      ),
       onbordingBuildPage(
         context: context,
-          imagePath: ONBORDING_THIRD,
-          title: localizations.onboarding_title3,
-          subtitle: localizations.onboarding_subtitle3),
+        imagePath: ONBORDING_SECOND,
+        title: localizations.onboarding_title2,
+        subtitle: localizations.onboarding_subtitle2,
+      ),
+      onbordingBuildPage(
+        context: context,
+        imagePath: ONBORDING_THIRD,
+        title: localizations.onboarding_title3,
+        subtitle: localizations.onboarding_subtitle3,
+      ),
     ];
   }
-
 
   Future<void> _completeOnboarding() async {
     SharedPreferences sp = await SharedPreferences.getInstance();
@@ -56,7 +54,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
-     final localizations = AppLocalizations.of(context)!;
+    final localizations = AppLocalizations.of(context)!;
     return Scaffold(
       body: Column(
         children: [
@@ -67,7 +65,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               padding: const EdgeInsets.only(top: 40, right: 16),
               child: TextButton(
                 onPressed: _completeOnboarding,
-                child:  Text(localizations.skip),
+                child: Text(localizations.skip),
               ),
             ),
           ),
@@ -92,7 +90,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(
                 _buildPages(context).length,
-                (index) => onbordingBuildDot(index: index, currentPage: _currentPage, context: context),
+                (index) => onbordingBuildDot(
+                  index: index,
+                  currentPage: _currentPage,
+                  context: context,
+                ),
               ),
             ),
           ),
@@ -115,18 +117,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Theme.of(context).primaryColor,
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 30,
-                      vertical: 12), // Padding around the button
+                    horizontal: 30,
+                    vertical: 12,
+                  ), // Padding around the button
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(25), // Rounded corners
                   ),
                 ),
                 child: Text(
-
                   _currentPage == _buildPages(context).length - 1
                       ? localizations.started
                       : localizations.next,
-                  style: const TextStyle(fontSize: 18, color: Colors.white),
+                  style:  Theme.of(context).textTheme.labelMedium,
                 ),
               ),
             ),

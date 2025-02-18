@@ -29,5 +29,6 @@
     "languageName": "Français",
     "started":"Commencer",
     "next":"Suivant",
-    "skip" : "Passer"
+    "skip" : "Passer",
+    "version": "Version"
 }

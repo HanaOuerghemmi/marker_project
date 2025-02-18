@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:marker_project/core/bloc/version_cubit.dart';
 
 import '../core.dart';
 
@@ -14,6 +15,7 @@ class AppProvider extends StatelessWidget {
       providers: [
         BlocProvider(create: (_) => ThemeCubit()),
         BlocProvider(create: (_) => LanguageCubit()),
+        BlocProvider(create: (_) => VersionCubit()),
       ],
       child: MyApp(isShowOnboarding: isShowOnboarding),
     );

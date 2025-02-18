@@ -30,5 +30,6 @@
     "languageName": "English",
     "started":"Get Started",
     "next":"Next",
-    "skip" : "Skip"
+    "skip" : "Skip",
+    "version": "Version"
 }

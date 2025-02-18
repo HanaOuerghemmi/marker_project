@@ -18,6 +18,7 @@ class AppTheme {
       headlineMedium: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: AppColors.lightText),
       bodyLarge: TextStyle(fontSize: 16, color: AppColors.lightText),
       bodyMedium: TextStyle(fontSize: 14, color: AppColors.lightText),
+      labelSmall: TextStyle( fontSize: 14, color: AppColors.darkGrey, fontWeight: FontWeight.w600)
     ),
     buttonTheme: const ButtonThemeData(
       buttonColor: AppColors.secondColor,
@@ -57,6 +58,8 @@ class AppTheme {
       headlineMedium: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: AppColors.darkText),
       bodyLarge: TextStyle(fontSize: 16, color: AppColors.darkText),
       bodyMedium: TextStyle(fontSize: 14, color: AppColors.darkText),
+      labelSmall: TextStyle( fontSize: 14, color: AppColors.grey, fontWeight: FontWeight.w600)
+
     ),
     buttonTheme: const ButtonThemeData(
       buttonColor: AppColors.primaryColor,

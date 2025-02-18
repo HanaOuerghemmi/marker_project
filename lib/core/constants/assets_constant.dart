@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 //*************  onbording assets  **************************/
 const SPLASH_LOGO = "assets/images/logo.png";
 const ONBORDING_FIRST = "assets/images/onbord.jpeg";
